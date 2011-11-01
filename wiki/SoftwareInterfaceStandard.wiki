@@ -1,0 +1,22 @@
+#summary Interface Standard
+
+This documentation is to define the interface standard for the DC20A Crystal Orientation Data Collection for Conversion to a General Data Type project. The standard is aimed to welcome more research equipments and mechanisms into the Metadata/Storage solution, and improve the expandability of the system design.
+
+= Introduction =
+
+The idea of this standard is to separate tasks and responsibilities of research data capture/processing/analysis/transferring into two streams, and collaborate on a specified interface. Essentially these tasks are identified in this project,
+  * Collecting research project information from 3rd party systems
+  * Collecting metadata from researchers who performing the research session
+  * Communicating with the research mechanism to capture research data
+  * Research data processing, converting to other formats, improving the quality or any type of analysis
+  * Transferring research data and the outcomes to a centralised network storage
+  * Making the research data visible in organisation
+
+Despite how the procedure of research data processing looks like, metadata capture and storage remains the same. Separating the research data processing apart from other tasks will provide an umbrella solution for researchers and benefit from different ways, including:
+  * Researchers would focus on the research data and its analysis/processing, rather than other parts of the solution
+  * Researchers would have the flexibility to build their program with any language they are familiar with, which is a boost on productivity and efficiency
+  * This separation of tasks will simplify the integration workload and provide an umbrella solution for further extension to more research equipments and mechanisms
+  * Debugging and troubleshooting is only required for the program processing research data, rather than the whole solution
+
+The stream processing the research data, performing the analysis/conversion/enhancement task is named *Processing Program* afterwards.
+The stream processing the metadata, looking after the storage is named *Manipulating Software* afterwards.
