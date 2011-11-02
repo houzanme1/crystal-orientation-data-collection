@@ -170,7 +170,7 @@ In the `metadata` section of exchange file, some key names have been defined wit
 ||data.project.code|| ||IN||The research project code||
 ||data.project.name|| ||IN||The research project name||
 ||data.project.owner|| ||IN||The owner of the data, normally supervisor of the research project||
-||data.datetime|| ||IN||The time when data files determined in [http://tools.ietf.org/html/rfc3339 RFC 3339 format]||
+||data.datetime|| ||IN||The time when data files determined in [http://tools.ietf.org/html/rfc3339 RFC 3339 format]. For example 2011-11-02 13:32:20+11:00||
 
 Notes:
   # Direction indicates if the metadata is passed from the *Manipulating Software* or reported by a *Processing Program*.
