@@ -124,7 +124,7 @@ Under the `files` section, a list of research data file will be present. Each fi
 
 A Processing Program should avoid duplication in the file lists, although the Manipulating Software will do a double check before manipulation on each file. In some extreme situations, duplication of files with large size may delay the whole process.
 
-=== File List Sample ===
+=== Exchange File Sample ===
 {{{
 [metadata]
 data.confirm.transfer=1
