@@ -46,6 +46,9 @@ The Processing Program may also report an error whenever it's procedure failed. 
 
 The whole solution looks like this, as diagrammed.
 
+http://crystal-orientation-data-collection.googlecode.com/svn/wiki/attachments/SoftwareInterfaceStandard/software-interface-bluemap.png <br>_How they work together_
+
+
 http://crystal-orientation-data-collection.googlecode.com/svn/wiki/attachments/SoftwareInterfaceStandard/software-interface-flowchart.png <br>_Flow chart of both parties_
 
 
@@ -159,7 +162,7 @@ Error code and error message should be updated in exchange file, under section `
 
 In the `metadata` section of exchange file, some key names have been defined with particular meaning to communicate information between the Manipulating Software and a Processing Program.
 
-||Key||Default Value||Direction||Description||
+||Key||Default Value||Direction^1^||Description||
 ||error.code||0||OUT||An error code. 0 for success and fail for otherwise||
 ||error.message|| ||OUT||An error message. Only valid when error.code is non-zero||
 ||data.confirm.transfer||1||IN OUT||If requires confirmation from researcher before transferring to network storage. 1 for confirmation required, 0 to force transferring||
