@@ -124,6 +124,12 @@ A Processing Program should avoid duplication in the file lists, although the Ma
 === File List Sample ===
 {{{
 [metadata]
+data.confirm.transfer=1
+data.storage.directory=RM00099-crystal-orientation/andrew
+data.project.code=RM00099
+data.project.name=crystal-orientation
+data.project.owner=Andrew
+data.datetime=2011-11-02 13:32:20+11:00
 error.code=0
 error.message=Operation Success
 TCL.parameters=129,250,223
@@ -161,7 +167,7 @@ In the `metadata` section of exchange file, some key names have been defined wit
 ||data.project.code|| ||IN||The research project code||
 ||data.project.name|| ||IN||The research project name||
 ||data.project.owner|| ||IN||The owner of the data, normally supervisor of the research project||
-||data.datetime|| ||IN||The time when data files determined||
+||data.datetime|| ||IN||The time when data files determined in [http://tools.ietf.org/html/rfc3339 RFC 3339 format]||
 
 Notes:
   # Direction indicates if the metadata is passed from the Manipulating Software or reported by a Processing Program.
