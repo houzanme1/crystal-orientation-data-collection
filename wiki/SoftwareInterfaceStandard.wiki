@@ -49,22 +49,17 @@ When research data is determined, Manipulating Software will launch the Processi
 
 This parameter is always passed when a Processing Program invoked by the Manipulating Software
 
-*`--research-data-file FILE`*
+*`--research-file-list FILE`*
 
-For each research data file determined, one instance of this parameter will be passed and the full path to the data file will be appended. There may be multiple occuacations of this parameter if more than one data file have been found
-
-*`--research-metadata-file FILE`*
+This parameter will pass a master file to the Processing Program, which contains a list of metadata files, as well as research data files.
 
 The Manipulating Software will generate a metadata file which contains the key-value pairs captured during the acquisition process. There are some information may be referred by Processing Program during its procedure of data. Multiple metadata files may be passed to the Processing Program.
 
-*`--research-file-list FILE`*
+For each research data file determined, the full path to the data file will be appended into this file list. 
 
-The windows system have a limitation on maximum length of command-line parameters. See http://support.microsoft.com/kb/830473 .
-
-When the length of all parameters exceeds 1024 characters, all file paths will be wroten to a midterm file separated with a breakline. This midterm file will have a random name which is appended to this parameter. The midterm file will left on file system for trouble shooting.
+This file list will be written to a midterm file separated with a line break. This midterm file will have a random name which is appended to this parameter. The midterm file will left on file system for trouble shooting after the processing.
 
 The format of midterm file could be found in sections after.
-If this parameter received, a Processing Program should ignore any `--research-metadata-file` or `--research-data-file parameter`.
 
 == File List Format ==
 
@@ -88,7 +83,7 @@ C:\tsl\untitled1.res
 a Processing Program should produce a outcome report whenever it finishes its procedure. An outcome report is a list of key-values pairs indicating the procedure result. Each line will follow format
 `KEY=VALUE`
 
-A key is a string composed by letter, numberic or dot. No space or any other character allowed.
+A key is a string composed by letter, numeric or dot. No space or any other character allowed.
 
 A value can contain any character even the equal symbol (=). But make sure no line breaks in the value.
 
@@ -111,7 +106,7 @@ If yes, all the metadata files passed with --research-metadata-file parameter or
 
 *`metadata.file=FILE`*
 
-Append a new metafile to the outcome report. Metadata files appended will be transferred to network storage.
+Append a new metadata file to the outcome report. Metadata files appended will be transferred to network storage.
 This line can occur more than once. 
 
 Other lines will be ignored at current version.
