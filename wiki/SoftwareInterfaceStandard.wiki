@@ -2,6 +2,9 @@
 
 This documentation is to define the interface standard for the DC20A Crystal Orientation Data Collection for Conversion to a General Data Type project. The standard is aimed to welcome more research equipments and mechanisms into the Metadata/Storage solution, and improve the expandability of the system design.
 
+http://crystal-orientation-data-collection.googlecode.com/svn/wiki/attachments/SoftwareInterfaceStandard/jigsaw_puzzle.png
+
+
 = Introduction =
 
 The idea of this standard is to separate tasks and responsibilities of research data capture/processing/analysis/transferring into two streams, and collaborate on a specified interface. Essentially these tasks are identified in this project,
