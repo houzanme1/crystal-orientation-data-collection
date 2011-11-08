@@ -1,0 +1,38 @@
+#summary configurations for manipulating-software
+
+= Introduction =
+
+All configuration will be stored in a .ini file. When started then Manipulating Software will try to load configurations from file _config/default.ini_. The file name can be indicated by parameter
+{{{
+ --config-file FILE
+}}}
+
+
+= References =
+|| *KEY* || *Description* ||
+|| `sys.interface.booking` || The web URL to retrieving booking information. ||
+|| `sys.interface.storage` || The web URL to retrieving network storage information. ||
+|| project.list || A list of project shortnames. Each short name will be used as part of a key ||
+|| `project.[SHORTNAME].id` || The id for this project. ||
+|| `project.[SHORTNAME].name` || The name for this project. ||
+|| `project.[SHORTNAME].owner` || The owner's name for this project. ||
+|| `project.[SHORTNAME].data.transfer.enable` || Enable or disable the transfer of data to network storage ||
+|| `project.[SHORTNAME].data.transfer.defaultpath` || Default destination for data transfer ||
+|| `project.[SHORTNAME].metadata.attach` || Generate an attachment for metadata when transferring data to storage ||
+|| `project.[SHORTNAME].metadata.sourcefile` || A file records all interested metadata for this project ||
+|| `project.[SHORTNAME].metadata.prompt` || Enable or disable the prompt window for metadata when starting a new session ||
+|| `equipment.list` || A list of equipment shortnames. Each short name will be used as part of a key ||
+|| `equipment.[SHORTNAME].id` || The id for this equipment. ||
+|| `equipment.[SHORTNAME].name` || The name for this equipment. ||
+|| `equipment.[SHORTNAME].launcher.program` || Path to the exe file associated with this equipment. ||
+|| `equipment.[SHORTNAME].launcher.prompt` || Enable or disable the prompt window before launch equipment software ||
+|| `equipment.[SHORTNAME].monitor.extensions` || a list of file extensions separated by a comma ||
+|| `equipment.[SHORTNAME].monitor.directories` || a list of path to be monitored, separated by a comma ||
+|| `equipment.[SHORTNAME].export.enabled` || Enable or disable the export of data file from equipment software ||
+|| `equipment.[SHORTNAME].export.script` || The script to export ||
+|| `equipment.[SHORTNAME].export.extension` || File extension of exported file ||
+|| `equipment.[SHORTNAME].processing.enabled` || Enable or disable the processing of data ||
+|| `equipment.[SHORTNAME].processing.program` || The path to a program which will deal with the research data ||
+|| `equipment.[SHORTNAME].storage.enabled` || Enable or disable the storage of data ||
+|| `equipment.[SHORTNAME].storage.prompt` || Enable or disable the prompt window before transferring ||
+
