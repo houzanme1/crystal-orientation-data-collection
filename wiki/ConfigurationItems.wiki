@@ -24,6 +24,7 @@ All configuration will be stored in a .ini file. When started then Manipulating 
 || `equipment.list` || A list of equipment shortnames. Each short name will be used as part of a key ||
 || `equipment.[SHORTNAME].id` || The id for this equipment. ||
 || `equipment.[SHORTNAME].name` || The name for this equipment. ||
+|| `equipment.[SHORTNAME].launcher.enabled` || Enable or disable the launcher. If enabled, the appointed program will be started ||
 || `equipment.[SHORTNAME].launcher.program` || Path to the exe file associated with this equipment. ||
 || `equipment.[SHORTNAME].launcher.prompt` || Enable or disable the prompt window before launch equipment software ||
 || `equipment.[SHORTNAME].monitor.extensions` || a list of file extensions separated by a comma ||
@@ -35,4 +36,3 @@ All configuration will be stored in a .ini file. When started then Manipulating 
 || `equipment.[SHORTNAME].processing.program` || The path to a program which will deal with the research data ||
 || `equipment.[SHORTNAME].storage.enabled` || Enable or disable the storage of data ||
 || `equipment.[SHORTNAME].storage.prompt` || Enable or disable the prompt window before transferring ||
-
