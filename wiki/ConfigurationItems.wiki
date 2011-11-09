@@ -10,8 +10,9 @@ All configuration will be stored in a .ini file. When started then Manipulating 
 
 = References =
 || *KEY* || *Description* ||
-|| `sys.interface.booking` || The web URL to retrieving booking information. ||
-|| `sys.interface.storage` || The web URL to retrieving network storage information. ||
+|| `sys.network.enabled` || Enable or disable network connection ||
+|| `sys.network.interface.booking` || The web URL to retrieving booking information. ||
+|| `sys.network.interface.storage` || The web URL to retrieving network storage information. ||
 || `sys.network.checking.interval` || The time interval between checks of network connection (in seconds) ||
 || `project.list` || A list of project shortnames. Each short name will be used as part of a key ||
 || `project.[SHORTNAME].id` || The id for this project. ||
