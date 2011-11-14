@@ -2,7 +2,7 @@
 
 = Introduction =
 
-All configuration will be stored in a .ini file. When started then Manipulating Software will try to load configurations from file _config/default.ini_. The file name can be indicated by parameter
+All configuration will be stored in a .ini file. When started the Manipulating Software will try to load configurations from file _config/default.ini_. The file name can be indicated by parameter
 {{{
  --config-file FILE
 }}}
