@@ -165,7 +165,7 @@ In the `metadata` section of exchange file, some key names have been defined wit
 ||Key||Default Value||Direction^1^||Description||
 ||error.code||0||OUT||An error code. 0 for success and fail for otherwise||
 ||error.message|| ||OUT||An error message. Only valid when error.code is non-zero||
-||data.confirm.transfer||1||IN OUT||If requires confirmation from researcher before transferring to network storage. 1 for confirmation required, 0 to force transferring||
+||data.storage.prompt||1||IN OUT||If requires confirmation from researcher before transferring to network storage. 1 for confirmation required, 0 to force transferring. This value will overwrite PROJECT/EQUIPMENT setting. If not setting will using EQUIPMENT then PROJECT setting.||
 ||data.storage.directory|| ||IN||The directory on network storage where the data is going to be stored||
 ||data.project.code|| ||IN||The research project code||
 ||data.project.name|| ||IN||The research project name||
