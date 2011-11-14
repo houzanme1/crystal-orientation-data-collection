@@ -18,8 +18,9 @@ All configuration will be stored in a .ini file. When started the Manipulating S
 || `project.[SHORTNAME].id` || The id for this project. ||
 || `project.[SHORTNAME].name` || The name for this project. ||
 || `project.[SHORTNAME].owner` || The owner's name for this project. ||
-|| `project.[SHORTNAME].data.transfer.enable` || Enable or disable the transfer of data to network storage ||
-|| `project.[SHORTNAME].data.transfer.defaultpath` || Default destination for data transfer ||
+|| `project.[SHORTNAME].storage.enable` || Enable or disable the transfer of data to network storage ||
+|| `project.[SHORTNAME].storage.prompt` || Should display a prompt dialog before transfer data to storage? 1 or 0 ||
+|| `project.[SHORTNAME].storage.defaultpath` || Default destination for data transfer ||
 || `project.[SHORTNAME].metadata.attach` || Generate an attachment for metadata when transferring data to storage ||
 || `project.[SHORTNAME].metadata.sourcefile` || A file records all interested metadata for this project ||
 || `project.[SHORTNAME].metadata.prompt` || Enable or disable the prompt window for metadata when starting a new session ||
@@ -36,5 +37,5 @@ All configuration will be stored in a .ini file. When started the Manipulating S
 || `equipment.[SHORTNAME].export.extension` || File extension of exported file ||
 || `equipment.[SHORTNAME].processing.enabled` || Enable or disable the processing of data ||
 || `equipment.[SHORTNAME].processing.program` || The path to a program which will deal with the research data ||
-|| `equipment.[SHORTNAME].storage.enabled` || Enable or disable the storage of data ||
+|| `equipment.[SHORTNAME].storage.enabled` || Enable or disable the storage of data. Will be overwritten by PROJECT setting ||
 || `equipment.[SHORTNAME].storage.prompt` || Enable or disable the prompt window before transferring ||
