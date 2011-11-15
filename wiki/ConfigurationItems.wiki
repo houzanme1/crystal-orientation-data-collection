@@ -21,9 +21,8 @@ All configuration will be stored in a .ini file. When started the Manipulating S
 || `project.[SHORTNAME].storage.enable` || Enable or disable the transfer of data to network storage ||
 || `project.[SHORTNAME].storage.prompt` || Should display a prompt dialog before transfer data to storage? 1 or 0 ||
 || `project.[SHORTNAME].storage.defaultpath` || Default destination for data transfer ||
-|| `project.[SHORTNAME].metadata.attach` || Generate an attachment for metadata when transferring data to storage ||
+|| `project.[SHORTNAME].metadata.attach` || Generate an attachment for metadata when transferring data to storage, 1 or 0 ||
 || `project.[SHORTNAME].metadata.sourcefile` || A file records all interested metadata for this project ||
-|| `project.[SHORTNAME].metadata.prompt` || Enable or disable the prompt window for metadata when starting a new session ||
 || `equipment.list` || A list of equipment shortnames to be supported. Each short name will be used as part of a key ||
 || `equipment.[SHORTNAME].id` || The id for this equipment. ||
 || `equipment.[SHORTNAME].name` || The name for this equipment. ||
