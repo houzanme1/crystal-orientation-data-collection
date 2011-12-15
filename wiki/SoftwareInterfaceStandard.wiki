@@ -122,6 +122,10 @@ A *Processing Program* may request input from the researcher before they conduct
 
 Under the `files` section, a list of research data file will be present. Each file takes one line and ended with a line break.
 
+A counter for files is required. This represents the total number of individual files to be transferred by the *Manipulating Software*. There will be a sequence number appended to each key name, make sure the number comes in sequence and matches to the total counter.
+
+Each file can define a destination directory on network storage. If the directory does not exist, the *Manipulating Software* will create this directory automatically. This directory can only be a relative path, all starting slashes (/ or \) will be ignored.
+
 A *Processing Program* should avoid duplication in the file lists, although the *Manipulating Software* will do a double check before manipulation on each file. In some extreme situations, duplication of files with large size may delay the whole process.
 
 === Exchange File Sample ===
@@ -140,8 +144,11 @@ TCL.angle=60
 TCL.tempture=50oc
 
 [files]
-C:\tsl\untitled1.ang
-C:\tsl\untitled1.res
+count=2
+file1=C:\tsl\untitled1.ang
+destination1=raw-data/
+file2=C:\tsl\untitled1.res
+destination2=data/converted/
 }}}
 
 == Error Handling ==
