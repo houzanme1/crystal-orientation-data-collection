@@ -34,7 +34,7 @@ All configuration will be stored in a .ini file. When started the Manipulating S
 || `equipment.[SHORTNAME].export.enabled` || Enable or disable the export of data file from equipment software ||
 || `equipment.[SHORTNAME].export.script` || The script to export ||
 || `equipment.[SHORTNAME].export.extension` || File extension of exported file ||
-|| `equipment.[SHORTNAME].processing.enabled` || Enable or disable the processing of data ||
-|| `equipment.[SHORTNAME].processing.program` || The path to a program which will deal with the research data ||
+|| `equipment.[SHORTNAME].convert.enabled` || Enable or disable the processing of data ||
+|| `equipment.[SHORTNAME].convert.program` || The path to a program which will deal with the research data ||
 || `equipment.[SHORTNAME].storage.enabled` || Enable or disable the storage of data. Will be overwritten by PROJECT setting ||
 || `equipment.[SHORTNAME].storage.prompt` || Enable or disable the prompt window before transferring ||
