@@ -64,7 +64,7 @@ When research data is determined, *Manipulating Software* will launch the *Proce
 
 This parameter is always passed when a *Processing Program* invoked by the *Manipulating Software*.
 
-*`--research-exchange-list FILE`*
+*`--research-exchange-file FILE`*
 
 This parameter will pass a master file to the *Processing Program*, which contains a list of metadata files, as well as research data files.
 
@@ -78,10 +78,10 @@ The format of exchange file could be found in sections after.
 
 Samples of command line when invoking *Processing Program*.
 <code language="bat">REM This command line will be invoked when running conversion.exe as a Processing Program
-conversion.exe --launched-from-manipulating-software --research-exchange-list "C:\fea7e690-0504-11e1-be50-0800200c9a66.txt"
+conversion.exe --launched-from-manipulating-software --research-exchange-file "C:\fea7e690-0504-11e1-be50-0800200c9a66.txt"
 
 REM This command line will be invoked when running process.m (Matlab Script) a Processing Program
-start /b process.m --launched-from-manipulating-software --research-exchange-list "C:\fea7e690-0504-11e1-be50-0800200c9a66.txt"</code>
+start /b process.m --launched-from-manipulating-software --research-exchange-file "C:\fea7e690-0504-11e1-be50-0800200c9a66.txt"</code>
 
 == Exchange File Format ==
 
