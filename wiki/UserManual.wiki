@@ -1,0 +1,15 @@
+#summary ANDS DC20A Crystal Orientation Data Collection User Manual version 1.0
+
+= Introduction =
+
+Managing and organising data is never a simple matter. Everyone has their own philosophy and methodology. 
+
+When comes to the research, it's even more complex.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
