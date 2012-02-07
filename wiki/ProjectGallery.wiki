@@ -1,4 +1,5 @@
+=A list of video/images demo=
 
-A list of video/images demo
+A screen recording presenting the HKL research data being managed
 
- * http://youtu.be/FvL1MkN4gP8 A screen recording presenting the HKL research data being managed
+<wiki:video url="http://www.youtube.com/watch?v=FvL1MkN4gP8"/>
