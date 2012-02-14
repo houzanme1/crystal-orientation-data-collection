@@ -1,0 +1,8 @@
+#summary Release Notes
+#labels Phase-Deploy,Featured
+
+v1.0
+14/02/2012
+The first release
+an initial version which is functional and working properly
+Check UserManual for more information
