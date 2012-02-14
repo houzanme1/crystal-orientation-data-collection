@@ -2,4 +2,5 @@
 
 A screen recording presenting the HKL research data being managed
 
+Deployed with a HKL equipment
 <wiki:video url="http://www.youtube.com/watch?v=FvL1MkN4gP8"/>
