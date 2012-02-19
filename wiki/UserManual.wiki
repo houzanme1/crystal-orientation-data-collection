@@ -84,9 +84,9 @@ You may indicate a particular sub-folder as the default path for research data t
 
 This software will try to look for a project definition in your appointed sub-folder. The definition needs to be stored in a file named “PROJECT.ini”. Within this file these definition items are expected.
 || Item || Description ||
-|| [project] project.name	|| The project name ||
-|| [project] project.owner || Project leader and contact information ||
-|| [metadata]	|| Assign technical metadata to this project. These metadata will be collected at the beginning of each research activity. ||
+|| `[project`] project.name	|| The project name ||
+|| `[project`] project.owner || Project leader and contact information ||
+|| `[metadata`]	|| Assign technical metadata to this project. These metadata will be collected at the beginning of each research activity. ||
 
 Project folders and project definition files should be setup prior the research activity.
 
