@@ -134,7 +134,7 @@ This software will run automatically when your windows operation system is start
 
 When the software is started, a Main Window will show on screen, as following
 
-http://code.google.com/p/crystal-orientation-data-collection/source/browse/wiki/attachments/UserManual/screen-main-dialog.png
+http://crystal-orientation-data-collection.googlecode.com/svn/wiki/attachments/UserManual/screen-main-dialog.png
 
 This Main Window shows the system logs. System logs are also stored on local hard drive.
 
@@ -145,14 +145,18 @@ Note: This will not clear the system log stored on local drive.
 Close button: Hide the main window but keep this software running in background.
 
 An icon will be displayed in system tray.
- ----
+ 
+http://crystal-orientation-data-collection.googlecode.com/svn/wiki/attachments/UserManual/screen-notify-icon.png
+
 Double click on the icon to show or hide the main window. Right click on this icon will pop up a system menu.
- ----
+
+ http://crystal-orientation-data-collection.googlecode.com/svn/wiki/attachments/UserManual/screen-popup-menu.png
+
 Restore Console: Display the main window.
 Hide Console: Hide the main window from screen. This software will continue running in background.
 Exit: Stop running and exit.
 ==Start a New Research Session==
-----
+http://crystal-orientation-data-collection.googlecode.com/svn/wiki/attachments/UserManual/screen-new-session-dialog.png
 
 To conduct a research activity, user needs to start a new research session.
 
