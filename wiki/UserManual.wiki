@@ -237,6 +237,8 @@ Several data streams are working together within this software.
 
 ==Workflow==
 The life span of each internal process component
+
+http://crystal-orientation-data-collection.googlecode.com/svn/wiki/attachments/UserManual/workflow.png
  
   # This software is expected to be launched when windows operation system is started.
   # As soon as started, this software will start to update project profile on a time basis
