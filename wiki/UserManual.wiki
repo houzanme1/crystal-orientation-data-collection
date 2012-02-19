@@ -4,9 +4,9 @@
 =Introduction=
 ==Purpose==
 The purpose of this document is to describe the processes for capturing data and metadata as defined by the “Crystal Orientation Data Capture for Conversion to a General Data Type” project, including:
-* 	Processes for capturing data and metadata from instruments;
-* 	Metadata schema; and
-* 	Locations of information.
+ * 	Processes for capturing data and metadata from instruments;
+ * 	Metadata schema; and
+ * 	Locations of information.
 
 ==Project Objective==
 The Federal Government, via the Australian National Data Service (ANDS), has funded the creation and development of the Australian Research Data Commons (ARDC) infrastructure, supporting the discovery of, and access to, research data held in Australian universities, publicly funded research agencies and government organisations for the use of research. Under this program, funding is available for Data Capture projects which create infrastructure within institutions to collect and manage data, and to improve the way metadata about it is managed.
@@ -19,21 +19,21 @@ This project will also utilise infrastructure developed by the ANDS –Seeding t
 
 ==Background==
 As part of Deakin’s ANDS Seeding the Commons Project (SC19), the potential solution options for storage and capture of research metadata were reviewed and the following recommendations made.
-* 	The Deakin Research Online (DRO) publications and publications metadata repository would be used as the repository for research data collection metadata. The DRO will be enhanced as part of the ANDS Seeding the Commons Project (SC19) in order to support the capture, management, storage and harvest of research metadata.
-* 	Deakin’s research metadata would be captured and stored independently of the existing publications metadata, allowing customisation of the metadata captured for research compared with the metadata captured for publications. However, enhancements would be made to the DRO to ensure searching functionality would allow searching of both publications and research metadata in an integrated manner.
-* 	Deakin’s research metadata would be captured and stored in a customised Deakin Metadata schema, supporting the capture of all metadata fields required for submission to ANDS (as defined by the RIF-CS standard), plus additional metadata fields identified as required for Deakin’s own use.The Deakin Metadata schema will be defined as part of the ANDS Seeding the Commons Project (SC19).
-* 	Deakin’s research data collections would not be stored in the DRO due to limitations on space that may impact data collections which generate large data files, such as high-resolution images. 
-* 	Deakin’s research data collections will be stored within the faculties in which they are generated. The Crystal Orientation Data Capture project will pilot the use of Deakin’s existing ISILON shares, which are supported by ITSD and provide secure, backed-up storage, for the storage of research data collections. The ISILON shares are web-enabled, supporting direct access via the DRO to data collections which have been released for open access. (Deakin Research Services Division and ITSD are currently seeking funding for the development of a Research Data Management Plan which will determine the long-term strategy for storage of research data at the University.)
-* 	Deakin Research Online (DRO) provides existing functionality which supports the control, authorisation and publication of research metadata, and will provide a portal for direct or mediated access to the research data collections. 
+ * 	The Deakin Research Online (DRO) publications and publications metadata repository would be used as the repository for research data collection metadata. The DRO will be enhanced as part of the ANDS Seeding the Commons Project (SC19) in order to support the capture, management, storage and harvest of research metadata.
+ * 	Deakin’s research metadata would be captured and stored independently of the existing publications metadata, allowing customisation of the metadata captured for research compared with the metadata captured for publications. However, enhancements would be made to the DRO to ensure searching functionality would allow searching of both publications and research metadata in an integrated manner.
+ * 	Deakin’s research metadata would be captured and stored in a customised Deakin Metadata schema, supporting the capture of all metadata fields required for submission to ANDS (as defined by the RIF-CS standard), plus additional metadata fields identified as required for Deakin’s own use.The Deakin Metadata schema will be defined as part of the ANDS Seeding the Commons Project (SC19).
+ * 	Deakin’s research data collections would not be stored in the DRO due to limitations on space that may impact data collections which generate large data files, such as high-resolution images. 
+ * 	Deakin’s research data collections will be stored within the faculties in which they are generated. The Crystal Orientation Data Capture project will pilot the use of Deakin’s existing ISILON shares, which are supported by ITSD and provide secure, backed-up storage, for the storage of research data collections. The ISILON shares are web-enabled, supporting direct access via the DRO to data collections which have been released for open access. (Deakin Research Services Division and ITSD are currently seeking funding for the development of a Research Data Management Plan which will determine the long-term strategy for storage of research data at the University.)
+ * 	Deakin Research Online (DRO) provides existing functionality which supports the control, authorisation and publication of research metadata, and will provide a portal for direct or mediated access to the research data collections. 
 
 These recommendations were accepted by the Project Board and form the basis for the software architecture for the Crystal Orientation Data Capture system, and for the processes based on this architecture for the capture of data and metadata.
 
 ==What will this software do==
 
 This software will working together with the existing microscope equipment and acquisition software within the Electron Microscope Facility, including but not limited to
-* 	SEM -  HKL Conversion Process
-* 	SEM - TSL-OIM Conversion Process
-* 	TEM -NanomegasDigistar Conversion Process
+ * 	SEM -  HKL Conversion Process
+ * 	SEM - TSL-OIM Conversion Process
+ * 	TEM -NanomegasDigistar Conversion Process
 
 This software will collect, standardise and convert electron diffraction data and metadata from each different acquisition system, then transfer to a centralised data storage. The acquired data will be organised into a project and session basis.
 
@@ -50,13 +50,13 @@ Target Audience: System Administrator, Research Project Leader
 The install package is downloadable from http://code.google.com/p/crystal-orientation-data-collection. 
 
 ==System Requirement==
-* 	Intel  1.3GHz or faster processor
-* 	Microsoft  Windows  XP Home, Professional, or Tablet PC Edition with Service Pack 3 (32 bit) or Service Pack 2 (64 bit); Windows Server  2003 (with Service Pack 2 for 64 bit; Windows Server2008 (32 bit and 64 bit); Windows Server 2008 R2 (32 bit and 64 bit); Windows Vista  Home Basic, Home Premium, Business, Ultimate, or Enterprise with Service Pack 2 (32 bit and 64 bit); Windows 7 or Windows 7 with Service Pack 1 Starter, Home Premium, Professional, Ultimate, or Enterprise (32 bit and 64 bit)
-* 	256MB of RAM (512MB recommended)
-* 	100MB of available hard-disk space
-* 	1024x786 screen resolution recommended
-* 	Microsoft Internet Explorer 7, 8, 9; Firefox 3.6, 4.0 or 6.0; Chrome
-* 	Video hardware acceleration (optional)
+ * 	Intel  1.3GHz or faster processor
+ * 	Microsoft  Windows  XP Home, Professional, or Tablet PC Edition with Service Pack 3 (32 bit) or Service Pack 2 (64 bit); Windows Server  2003 (with Service Pack 2 for 64 bit; Windows Server2008 (32 bit and 64 bit); Windows Server 2008 R2 (32 bit and 64 bit); Windows Vista  Home Basic, Home Premium, Business, Ultimate, or Enterprise with Service Pack 2 (32 bit and 64 bit); Windows 7 or Windows 7 with Service Pack 1 Starter, Home Premium, Professional, Ultimate, or Enterprise (32 bit and 64 bit)
+ * 	256MB of RAM (512MB recommended)
+ * 	100MB of available hard-disk space
+ * 	1024x786 screen resolution recommended
+ * 	Microsoft Internet Explorer 7, 8, 9; Firefox 3.6, 4.0 or 6.0; Chrome
+ * 	Video hardware acceleration (optional)
 
 ==Installation==
 
@@ -65,9 +65,9 @@ There are several packages available on http://code.google.com/p/crystal-orienta
 The easiest way to install is to download the all-in-one installation package and extract to your local drive. The all-in-one installation package delivers all required binary files, dependencies and sample configuration files.
 
 For advanced installation options, this software is distributed in 2 component installation packages:
-* 	Dependency-Package
+ * 	Dependency-Package
     This package contains the fundamental files required by this software. These files are reused in all versions
-* 	Execute-Binary
+ * 	Execute-Binary
     The execute binary files comes in this package. This package has a faster release frequency.
 
 To perform a complete installation, download both packages on the latest version, then extract to the same folder. It is highly recommended to install this software in folder C:\DC20A
@@ -116,9 +116,9 @@ Set up these items in your configuration file:
 
 Your research instrument needs to be supported before research data is acquired by this software.
 After installation, these instruments and microscope software are supported automatically
-* 	SEM -  HKL Conversion Process
-* 	SEM - TSL-OIM Conversion Process
-* 	TEM - NanomegasDigistar Conversion Process
+ * 	SEM -  HKL Conversion Process
+ * 	SEM - TSL-OIM Conversion Process
+ * 	TEM - NanomegasDigistar Conversion Process
 
 Your instrument may already been supported and there may already be downloads available for your instrument. Check http://code.google.com/p/crystal-orientation-data-collection/wiki/EquipmentSupported for your instrument.
 
@@ -134,7 +134,7 @@ This software will run automatically when your windows operation system is start
 
 When the software is started, a Main Window will show on screen, as following
 
- ----
+http://code.google.com/p/crystal-orientation-data-collection/source/browse/wiki/attachments/UserManual/screen-main-dialog.png
 
 This Main Window shows the system logs. System logs are also stored on local hard drive.
 
@@ -201,13 +201,13 @@ This software defines Equipment, Project and Session.
 ===Equipment===
 Equipment is defined as the specific knowledge related to research instrument and the associated software for data acquisition and processing. 
 This software needs to be aware of,
-* 	name of the instrument associated software
-* 	how to start the instrument associated software
-* 	what data format will be produced during acquisition, where to find them
-* 	what is the finishing flag of the data acquisition
-* 	shall the data be exported to another format
-* 	shall the data need further customised process
-* 	shall the data be transferred to network storage
+ * 	name of the instrument associated software
+ * 	how to start the instrument associated software
+ * 	what data format will be produced during acquisition, where to find them
+ * 	what is the finishing flag of the data acquisition
+ * 	shall the data be exported to another format
+ * 	shall the data need further customised process
+ * 	shall the data be transferred to network storage
 Equipment is defined in the configuration file. A list of supported equipments is available on http://code.google.com/p/crystal-orientation-data-collection/wiki/EquipmentSupported 
 ===Project===
 A Project consists of a series of research activities. A Project may define a list of technical metadata and give a default value for each.
@@ -218,30 +218,30 @@ If the Project has technical metadata defined, the researcher operating the inst
 A Session exchange file is created during the activity. It is then uploaded to the session folder on network storage with a name “METADATA.ini”, together with all data files acquired during the session.
 ==Internal Process==
 Several data streams are working together within this software.
-* 	Project Update
+ * 	Project Update
     This data stream will synchronise the project definitions from network server. This software will look for “PROJECT.ini” in each project folder.
     Synchronisation happens every 24 hours. If no project definition stored on local, the synchronisation will happen immediately when this software is started.
-* 	Data Acquisition and Processing
+ * 	Data Acquisition and Processing
     When researcher started this software with an Equipment parameter, this software will start the instrument associated software and record all new data files generated during the research session. Data files will be exported and customised to expected format. A file list of these new data files will be produced in the session exchange file. When the data acquisition and processing completed, the session will be queued for data transfer.
     If supported, this software will export the raw research data acquired during the session to a particular format. This software will utilise the instrument associated software to perform this action. As per the configuration, this software may simulate keyboard and mouse operations to interact with the instrument software.
     Some equipment may also be configured to have the data processed with a customised processing program. For instance, the data may be converted to another format, or be enhanced for better quality. The processing program is a customised tool and not necessarily from the instrument vendor.
     By default, this software will be installed with a data conversation tool which works on .ang files and convert to .ctf format, or the reverse.
-* 	Data Transferring to Network Storage
+ * 	Data Transferring to Network Storage
     This data stream will start immediately when this software started. This data stream will work on a queue of session exchange files. For each session, the list of research data file, as well as the research exchange file itself will be transferred to network storage.
 
 
 ==Workflow==
 The life span of each internal process component
  
-1.	This software is expected to be launched when windows operation system is started.
-2.	As soon as started, this software will start to update project profile on a time basis
-3.	As soon as started, this software will transfer research data file acquired during sessions to network storage
-4.	The research requests to start a new session. A parameter is sent to this software indicating the equipment and instrument
-5.	Before a new Research session is started, the contributed project and relative technical metadata is collected.
-6.	When new session started, the instrument associated software will be started and managed. This software starts to monitor for new generated data file, optionally filtered by nominated file format (file extension name) and directory path.
-7.	When the instrument associated software exits, this software will execute a script to export the raw data file. This step is optional
-8.	When no export required, or the data file export is completed, this software will execute a processing program to customise the data file. This step is optional
-9.	When the processing program exits, all data file will be organised into a session exchange file and this software stops monitoring. Session exchange file is queued for transfer.
+  # This software is expected to be launched when windows operation system is started.
+  # As soon as started, this software will start to update project profile on a time basis
+  # As soon as started, this software will transfer research data file acquired during sessions to network storage
+  # The research requests to start a new session. A parameter is sent to this software indicating the equipment and instrument
+  # Before a new Research session is started, the contributed project and relative technical metadata is collected.
+  # When new session started, the instrument associated software will be started and managed. This software starts to monitor for new generated data file, optionally filtered by nominated file format (file extension name) and directory path.
+  # When the instrument associated software exits, this software will execute a script to export the raw data file. This step is optional
+  # When no export required, or the data file export is completed, this software will execute a processing program to customise the data file. This step is optional
+  # When the processing program exits, all data file will be organised into a session exchange file and this software stops monitoring. Session exchange file is queued for transfer.
 
 
 =Extending and Re-Development=
@@ -251,17 +251,17 @@ If deploying with an instrument currently not supported, you can always create a
 ==Technical Details==
 ===Compile Environment and Dependencies===
 This software is developed with dependencies including
-* 	Microsoft C Runtime Library
+ * 	Microsoft C Runtime Library
     provided by Microsoft, as components of the Windows operating system
-* 	GNUWin32
+ * 	GNUWin32
     provides native ports in the form of runnable computer programs, patches, and source code for various GNU and open source tools and software. Project website http://gnuwin32.sourceforge.net 
-* 	wxWidget toolkit and library, version 2.9 or after
+ * 	wxWidget toolkit and library, version 2.9 or after
     a cross-platform GUI and tools library for GTK, MS Windows, and MacOS. Available for download at http://www.wxwidgets.org 
-* 	GNU Compiler Collection (GCC) or alternative
+ * 	GNU Compiler Collection (GCC) or alternative
     a compiler system produced by the GNU Project. Also tested with win32 port MinGW (http://www.mingw.org) and TDM-GCC (http://tdm-gcc.tdragon.net) 
-* 	AutoHotkey Basic
+ * 	AutoHotkey Basic
     a free, open source macro-creation and automation software utility. Official website http://www.autohotkey.com
-* 	SMBClient win32 port
+ * 	SMBClient win32 port
     the default storage is defined as a CIFS/SAMBA share. Smbclient is utilised for interaction and communication with the storage server. Tested with two releases available on http://leecutsco.de/lpackham/smbclient and http://www.hagyroom.com/labs/smbclient (Japanese language)
     Note: These dependencies are only required for compilation and further development. 
 ===Compile the source code===
@@ -274,9 +274,9 @@ For more available options, check the makefile in source code.
 Check the project website for your instrument, a script providing support for your instrument may already be contributed by the community. This information is available at http://code.google.com/p/crystal-orientation-data-collection/wiki/EquipmentSupported .
 
 If your instrument is not supported yet, you will need to work out these settings to have it involved
-* 	Instrument Configuration
-* 	Instrument Export Script (Optional)
-* 	Data File Processing Program
+ * 	Instrument Configuration
+ * 	Instrument Export Script (Optional)
+ * 	Data File Processing Program
 
 ===Instrument Configuration===
 This software is a universal tool to look after the instrument and research data. It has no knowledge about your instrument. The first step would be get your instrument introduced to this software. The instrument configuration is created for this purpose.
@@ -328,9 +328,9 @@ The network storage can be extended to other protocols, for example HTTP/HTTPS, 
 To extend you need to implement relative interface exposed in DataFileStorage class. Refer to source code file src/main/datafile_storage.cpp for more information.
 
 Your implementation of DataFileStorage needs to perform tasks including
-* 	Synchronise project profile
-* 	Create relative sub-folders in network storage
-* 	Uploading local file to network storage
+ * 	Synchronise project profile
+ * 	Create relative sub-folders in network storage
+ * 	Uploading local file to network storage
 
 You need to re-compile the source code and generate a new binary execution file afterwards.
 
