@@ -286,48 +286,61 @@ If your instrument is not supported yet, you will need to work out these setting
 ===Instrument Configuration===
 This software is a universal tool to look after the instrument and research data. It has no knowledge about your instrument. The first step would be get your instrument introduced to this software. The instrument configuration is created for this purpose.
 An instrument configuration is a series of settings in the system configuration file, by default located in config/default.ini. You will need to provide settings of
- || Item || 	Description || 
- || equipment.EID.id	 || The id for this equipment || 
- || equipment.EID.name	 || The name for this equipment || 
- || equipment.EID.launcher.enabled	 || Enable or disable the launcher. If enabled, the appointed program will be started. 1 for enabled or 0 for disabled
- || equipment.EID.launcher.program	 || Path to the software associated with this equipment || 
- || equipment.EID.monitor.extensions	 || A list of file extensions separated by a comma. Case insensitive. Any file with this extension will be reported during monitoring, and then exported, processed and transferred to network storage. Unless your Processing Program will manage to add the output file in exchange file, otherwise add your customised output file format extension here || 
- || equipment.EID.monitor.directories	 || A list of path to be monitored, separated by a comma || 
- || equipment.EID.export.enabled	 || Enable or disable the export of data file from instrument associated software.1 for enabled or 0 for disabled || 
- || equipment.EID.export.script	 || The script to perform export action || 
- || equipment.EID.processing.enabled	 || Enable or disable the processing of data.1 for enabled or 0 for disabled || 
- || equipment.EID.processing.program	 || The path to a processing program which will deal with the research data. This processing program will be executed with a particular parameters || 
- || equipment.EID.storage.enabled	 || Enable or disable the storage of data. If disabled no data will be transferred. 1 for enabled or 0 for disabled || 
- || equipment.EID.storage.flatfolder	 || Weather create sub-folders on network storage or not. If enabled all acquired data files will be stored in the same folder. Files with same name will be overwritten during transfer. 1 for enabled or 0 for disabled || 
+
+|| Item || Description || 
+|| equipment.EID.id || The id for this equipment || 
+|| equipment.EID.name || The name for this equipment || 
+|| equipment.EID.launcher.enabled || Enable or disable the launcher. If enabled, the appointed program will be started. 1 for enabled or 0 for disabled ||
+|| equipment.EID.launcher.program || Path to the software associated with this equipment || 
+|| equipment.EID.monitor.extensions || A list of file extensions separated by a comma. Case insensitive. Any file with this extension will be reported during monitoring, and then exported, processed and transferred to network storage. Unless your Processing Program will manage to add the output file in exchange file, otherwise add your customised output file format extension here || 
+|| equipment.EID.monitor.directories || A list of path to be monitored, separated by a comma || 
+|| equipment.EID.export.enabled || Enable or disable the export of data file from instrument associated software.1 for enabled or 0 for disabled || 
+|| equipment.EID.export.script || The script to perform export action || 
+|| equipment.EID.processing.enabled || Enable or disable the processing of data.1 for enabled or 0 for disabled || 
+|| equipment.EID.processing.program || The path to a processing program which will deal with the research data. This processing program will be executed with a particular parameters || 
+|| equipment.EID.storage.enabled || Enable or disable the storage of data. If disabled no data will be transferred. 1 for enabled or 0 for disabled || 
+|| equipment.EID.storage.flatfolder || Weather create sub-folders on network storage or not. If enabled all acquired data files will be stored in the same folder. Files with same name will be overwritten during transfer. 1 for enabled or 0 for disabled || 
 
     Note: Replace EID with the identity of your instrument. The identity is a unique string composed by only a-z and number 0-9. This identity is case sensitive and must be unique.
 
 If more than one instrument is managed by your operation system, for example, multiple instrument associated software installed on the same computer, you also need to add your instrument identity to the system configuration as following
 
- || Item	 || Description || 
- || equipment.list || 	A list of instrument identities to be supported, separated by a comma || 
+|| Item || Description || 
+|| equipment.list || A list of instrument identities to be supported, separated by a comma || 
 
 ===Instrument Export Script===
 If export enabled, you need provide a script to setting item equipment.EID.export.script.
 It is recommended to utilise the AutoHotkey Basic to perform the export action. Create your script to simulate keyboard and mouse movements to operate the instrument associated software. Refer to the script code in config/AutoHotKey.Scripts for a sample.
+
 When executed, session exchange file will be passed to your script as the only parameter. Check section Session Exchange File for the interface standard.
+
 ===Data File Processing Program===
-If enabled, a processing program needs to be developed to perform any data analysis and processing which could not be performed by the instrument associated software. For instance, converting or standardising to common format, or enhancing the quality. This processing program has an automatic workflow which requires no interaction.
+
+If enabled, a processing program needs to be developed to perform any data analysis and processing which could not be performed by the instrument associated software. 
+
+For instance, converting or standardising to common format, or enhancing the quality. This processing program has an automatic workflow which requires no interaction.
 The processing program can be built with any language or compile tool, not necessarily limited to the dependencies of this software.
+
 The processing program is expected to have specific knowledge about the research data, rather than the instruments, to perform data analysis or processing.
 When executed, the processing program will receive parameters as following
+
 {{{--launched-from-manipulating-software --research-exchange-file FILE}}}
+
 where FILE will be replaced with the absolute path to a session exchange file. The session exchange file will contain metadata of the session, including the project profile, equipment information and technical metadata acquired from researchers. The session exchange file will also contain a list of data files acquired during the session. The processing program may produce new data files based on the file list. The new data file may be monitored and recorded in the session exchange file, or be added to the session exchange file by processing program explicitly.
 To indicate if the processing is successful or not, the processing program can return a status code and message by putting two new items in the metadata section of session exchange file.
- || Item	 || Description || 
- || error.code || 	An error code. 0 for success and fail for otherwise || 
- || error.message	 || An error message. Only valid when error.code is non-zero || 
+
+|| Item || Description || 
+|| error.code || An error code. 0 for success and fail for otherwise || 
+|| error.message || An error message. Only valid when error.code is non-zero || 
 
     Note: If the error.code stated in session exchange file is non-zero, current session will be terminated and no data will be transferred. All the data files on local disk will not be removed.
 
 For more information, refer to the Software Interface Standard which is available on http://code.google.com/p/crystal-orientation-data-collection/wiki/SoftwareInterfaceStandard.
+
 Users are encouraged to contribute their equipment settings and processing program to this project.
+
 ==Other Network Storage Solution Rather Than SMB/CIFS==
+
 The network storage can be extended to other protocols, for example HTTP/HTTPS, FTP, rsync over SSH etc.
 
 To extend you need to implement relative interface exposed in DataFileStorage class. Refer to source code file src/main/datafile_storage.cpp for more information.
@@ -345,7 +358,11 @@ You need to re-compile the source code and generate a new binary execution file 
 This project is supported by the Australian National Data Service (ANDS). ANDS is supported by the Australian Government through the National Collaborative Research Infrastructure Strategy Program and the Education Investment Fund (EIF) Super Science Initiative.
 
 =Copyrights and Licenses =
+
 Copyright (c) 2011-2012 Deakin University.
+
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
 You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>.
