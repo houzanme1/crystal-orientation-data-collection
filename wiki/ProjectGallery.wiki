@@ -2,10 +2,11 @@
 
 A screen recording presenting the HKL research data being managed
 
-Deployed with a HKL equipment
+=Deployed with a HKL equipment=
 
 <wiki:video url="http://www.youtube.com/watch?v=FvL1MkN4gP8"/>
 
 
-Deployed with a NanoMEGAS ASTAR equipment
+=Deployed with a NanoMEGAS ASTAR equipment=
+
 <wiki:video url="http://www.youtube.com/watch?v=xu58HmCL9mE"/>
