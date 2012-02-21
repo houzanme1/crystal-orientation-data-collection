@@ -1,3 +1,4 @@
+#labels Featured
 =Introduction=
 
 This page lists the instrument supported and their scripts for download. 
