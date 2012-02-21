@@ -1,6 +1,17 @@
 #summary Release Notes
 #labels Phase-Deploy,Featured
 
+= v1.2 =
+
+22/02/2012
+
+ * check if existed in session file when new data found
+ * add a virtual equipment for testing
+ * bug fix: DataMonitor can not add path to monitor list
+ * bug fix: New Singleton pattern for MainDialog
+
+All users are recommended to upgrade to the current version.
+
 = v1.1 =
 
 20/02/2012
