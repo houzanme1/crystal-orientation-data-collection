@@ -16,3 +16,9 @@ A screen recording presenting the HKL research data being managed
 =Deployed with a TSL OIM equipment=
 
 <wiki:video url="http://www.youtube.com/watch?v=xeOrRccoFwI"/>
+
+
+
+=Deployed with a Leica equipment=
+
+<wiki:video url="http://www.youtube.com/watch?v=mTUPV9DrfMA"/>
