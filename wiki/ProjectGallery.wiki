@@ -10,3 +10,9 @@ A screen recording presenting the HKL research data being managed
 =Deployed with a NanoMEGAS ASTAR equipment=
 
 <wiki:video url="http://www.youtube.com/watch?v=xu58HmCL9mE"/>
+
+
+
+=Deployed with a TSL OIM equipment=
+
+<wiki:video url="http://www.youtube.com/watch?v=xeOrRccoFwI"/>
