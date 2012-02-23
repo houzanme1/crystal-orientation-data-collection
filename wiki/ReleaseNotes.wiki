@@ -3,6 +3,9 @@
 
 
 = v1.3 =
+
+23/02/2012
+
  * bug fix: processing program writing to the exchange file and makes a loop of file procdure
  * bug fix: file lost when data file generated quickly
 
