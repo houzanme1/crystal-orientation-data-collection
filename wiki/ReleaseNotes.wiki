@@ -1,6 +1,15 @@
 #summary Release Notes
 #labels Phase-Deploy,Featured
 
+
+= v1.3 =
+ * bug fix: processing program writing to the exchange file and makes a loop of file procdure
+ * bug fix: file lost when data file generated quickly
+
+All users are recommended to upgrade to the current version.
+
+
+
 = v1.2 =
 
 22/02/2012
@@ -11,6 +20,8 @@
  * bug fix: New Singleton pattern for MainDialog
 
 All users are recommended to upgrade to the current version.
+
+
 
 = v1.1 =
 
@@ -23,6 +34,8 @@ Bug fix and improvements
  * Improvement: log files are organised as per the current date. A new log file will be created automatically when going through 00:00 each day
 
 All users are recommended to upgrade to the current version.
+
+
 
 = v1.0 =
 
