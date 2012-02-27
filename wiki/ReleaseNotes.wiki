@@ -2,6 +2,14 @@
 #labels Phase-Deploy,Featured
 
 
+= v1.4 =
+
+27/02/2012
+
+ * code improvement: reconstruct code to comply with ANDS requirement
+
+All users are recommended to upgrade to the current version.
+
 = v1.3 =
 
 23/02/2012
