@@ -30,6 +30,6 @@ Supported by default since release 1.0
 
 ==Notes==
  * A research session will not complete until the microscope software is shut-down by the researcher.
- * Monitoring on .OSC .TIF .ANG .CTF file formats
+ * Monitoring on .RES .IXP .BNQ .ANG .CTF file formats
  * Data Export is disabled as exporting requires technical parameters from researcher. The researchers may choose to export .ang file manually 
  * All .ang file will be converted to .ctf files
