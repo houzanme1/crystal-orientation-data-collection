@@ -12,7 +12,7 @@ Supported by default since release 1.0
  * Monitoring on .CRC .CPR .ANG .CTF file formats
  * Data file will be exported to .ang files by operating the "Project Manager" application
  * All .ang file will be converted to .ctf files
- * Check PageGallery for screen recording
+ * Check ProjectGallery for screen recording
 
 =TSL OIM Data Collection 5.31=
 ==Download==
