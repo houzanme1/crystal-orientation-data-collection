@@ -1,6 +1,18 @@
 #summary Release Notes
 #labels Phase-Deploy,Featured
 
+= v1.5 =
+
+01/03/2012
+
+This is a major upgrade with conversion-program.
+
+ * bug fix: process header sections when converting ANG file to CTF
+ * bug fix: conversion-program will calc radians to euler
+ * improvement: Converted name with have a "-Converted" suffix, replacing "-HKL" which is misleading
+ * improvement: conversion validated and working properly
+
+All users are recommended to upgrade to the current version.
 
 = v1.4 =
 
