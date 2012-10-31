@@ -189,9 +189,22 @@ Cancel button: Do not start a new research session and hide this dialog.
 Start button: Launch the specific acquisition software to operate microscope instrument.
 
 After clicking on the Start button, you will interact with the microscope acquisition software. The research data produced during your session will be monitored.
+
+==Import Your Project==
+Since version 2.0 if your project is not listed in the new session window, you can add your project to be included by importing project and creating a project profile.
+
+To Add a new project to the list in "Start a new session" window, click on the "`Project Not Found?`" link, as shown below.
+
+http://crystal-orientation-data-collection.googlecode.com/svn/wiki/attachments/UserManual/screen-import-project-dialog.png
+
+This dialog will show all the project folders existing on your central data storage but without a project profile (PROJECT.ini file).
+
+To import a project, select from the drop down list 
+
 ==Export data==
 When your research activity is completed, your data may be exported from binary format to a text-based format. This is an automatic procedure and requires no interaction.
 The export of data is configured in your instrument and acquisition software settings. 
+
 ==Processing data==
 Your data may also been processed by a third-party program. For instance, converting or standardising to common format, or enhancing the quality. This is an automatic procedure and no interaction required.
 The processing of data is configured in your instrument and acquisition software settings.
