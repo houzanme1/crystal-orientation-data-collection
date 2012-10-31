@@ -199,7 +199,15 @@ http://crystal-orientation-data-collection.googlecode.com/svn/wiki/attachments/U
 
 This dialog will show all the project folders existing on your central data storage but without a project profile (PROJECT.ini file).
 
-To import a project, select from the drop down list 
+To import a project, select from the drop down list, then type in the required information in matrix underneath.
+
+You can also define required technical metadata. Simply enter the metadata name in *Name* column, then provide default value, or any type of text as a hint in *Value* column.
+
+When you finish editing, click on "Apply" button to create a project profile. The project profile will be uploaded to your centralised data storage and Synchronised to other CRYSTOSoftware clients.
+
+Note: To upload project profile to your centralised data storage, the project data folder should already be created and configured to assign write permission for your account.
+
+Note: The project data folder is defined in your configuration file, with a name of `sys.network.smb.storage`
 
 ==Export data==
 When your research activity is completed, your data may be exported from binary format to a text-based format. This is an automatic procedure and requires no interaction.
@@ -208,6 +216,7 @@ The export of data is configured in your instrument and acquisition software set
 ==Processing data==
 Your data may also been processed by a third-party program. For instance, converting or standardising to common format, or enhancing the quality. This is an automatic procedure and no interaction required.
 The processing of data is configured in your instrument and acquisition software settings.
+
 ==Transferring Data to Network Storage==
 After each session, all your data will be transferred automatically to the network storage. The transfer will include raw produced by instrument, exported data as well as processed data. A text file will also be created to record information for your current session. This file will be stored in the Session Folder with the name “METADATA.ini”.
     Note: If you choose the “-Not a registered research project-“ option when starting this session, your data will not be transferred.
@@ -216,8 +225,10 @@ For the path of your research data, please consult your system administrator.
 When data transfer is completed, this software will idle and get ready for the next research activity.
 =Internal Process and Workflow=
 Target Audience: Software User, Researcher, Software Developer
+
 ==Equipment, Project & Session==
 This software defines Equipment, Project and Session.
+
 ===Equipment===
 Equipment is defined as the specific knowledge related to research instrument and the associated software for data acquisition and processing. 
 This software needs to be aware of,
@@ -229,13 +240,16 @@ This software needs to be aware of,
  * 	shall the data need further customised process
  * 	shall the data be transferred to network storage
 Equipment is defined in the configuration file. A list of supported equipments is available on http://code.google.com/p/crystal-orientation-data-collection/wiki/EquipmentSupported 
+
 ===Project===
 A Project consists of a series of research activities. A Project may define a list of technical metadata and give a default value for each.
 Project information is updated automatically on a daily basis. This software will look for a file with name “PROJECT.ini” in the Project folder on server.
+
 ===Session===
 Session is defined as a research activity. A Session will involve Equipment as source of data, and attach the research to a specific Project.
 If the Project has technical metadata defined, the researcher operating the instrument will be requested for the parameters of each item, at the very beginning of a session. A session will also record a list of data files to be transferred to network storage, including raw research data and any data files generated after further process.
 A Session exchange file is created during the activity. It is then uploaded to the session folder on network storage with a name “METADATA.ini”, together with all data files acquired during the session.
+
 ==Internal Process==
 Several data streams are working together within this software.
  * 	Project Update
@@ -270,7 +284,9 @@ http://crystal-orientation-data-collection.googlecode.com/svn/wiki/attachments/U
 Target Audience: Software Developer
 
 If deploying with an instrument currently not supported, you can always create a script file to enable your acquisition software complying with integration standard. This software is open sourced and can be further developed for your specific requirements.
+
 ==Technical Details==
+
 ===Compile Environment and Dependencies===
 This software is developed with dependencies including
  * 	Microsoft C Runtime Library
@@ -286,12 +302,14 @@ This software is developed with dependencies including
  * 	SMBClient win32 port
     the default storage is defined as a CIFS/SAMBA share. Smbclient is utilised for interaction and communication with the storage server. Tested with two releases available on http://leecutsco.de/lpackham/smbclient and http://www.hagyroom.com/labs/smbclient (Japanese language)
     Note: These dependencies are only required for compilation and further development. 
+
 ===Compile the source code===
 Source code for this software can be downloaded from the project website. More information about checkout your copy of source code is available on http://code.google.com/p/crystal-orientation-data-collection/source/checkout .
 
 To compile the source code, install and setup the dependencies in your develop environment. Then type this command to start your compilation.
 {{{make compile}}}
 For more available options, check the makefile in source code.
+
 ==Add Support for Your Instrument==
 Check the project website for your instrument, a script providing support for your instrument may already be contributed by the community. This information is available at http://code.google.com/p/crystal-orientation-data-collection/wiki/EquipmentSupported .
 
