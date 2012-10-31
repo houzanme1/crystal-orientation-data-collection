@@ -1,6 +1,16 @@
 #summary Release Notes
 #labels Phase-Deploy,Featured
 
+= v2.0 =
+
+01/11/2012
+
+This is an enhancement with new features.
+
+This new version brings in a feature to create associated PROJECT.ini for those project that is not listed in "Start a new session" dialog.
+
+
+
 = v1.5 =
 
 01/03/2012
