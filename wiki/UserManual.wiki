@@ -140,8 +140,10 @@ This Main Window shows the system logs. System logs are also stored on local har
 
 Setting label: Click on this label to edit the configuration. 
     Note: Consult your system administrator before making any change. The change will take effect after system reboot.
+
 Clear label: Clear all logs displayed in Main Window. 
-Note: This will not clear the system log stored on local drive. 
+    Note: This will not clear the system log stored on local drive. 
+
 Close button: Hide the main window but keep this software running in background.
 
 An icon will be displayed in system tray.
@@ -173,8 +175,8 @@ Optional.Use the defined configuration file. If not specified, will use file con
 Optional. Start the specific research equipment. If not specified or invalid, appoints the first definition of research equipment ID by default.
 
 Sample commands
-{{{crystal-orientation-data-collection.exe --config-file default.ini --equipment-id HKL}}}
-{{{crystal-orientation-data-collection.exe -c default.ini -e HKL}}}
+{{{CRYSTOSoftware.exe --config-file default.ini --equipment-id HKL}}}
+{{{CRYSTOSoftware.exe -c default.ini -e HKL}}}
 
 The request to start a research session will be confirmed via a dialog, as following
  
